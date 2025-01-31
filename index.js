@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3000/"],
+    origin: ["https://blog-app-one-beige.vercel.app/", "https://blog-app-one-beige.vercel.app/"],
     credentials: true,
   })
 );
@@ -480,5 +480,5 @@ app.get('/api/all-users', async (req, res) => {
 });
 
 app.listen(4000, () => {
-  console.log("Server is running on http://localhost:4000");
+  console.log("Server is running on https://blog-app-one-beige.vercel.app/");
 });
